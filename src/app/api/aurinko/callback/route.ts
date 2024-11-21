@@ -4,5 +4,5 @@ import { NextResponse } from 'next/server';
 export const GET = async (req: Request) => {
   const { userId } = await auth()
   console.log('userId is', userId)
-  return NextResponse.json({ message: 'Hello World' })
+  return NextResponse.json({ message: 'Hello World!' })
 }
